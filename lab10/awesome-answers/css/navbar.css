@@ -1,0 +1,52 @@
+
+@font-face {
+    font-family: 'Aftika Light';
+    src: url('../assets/fonts/aftika_light.ttf') format('truetype');
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    
+}
+
+nav {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    background-color:  hsl(190, 60%, 90%);
+}
+
+#logo {
+    width: 5vw;
+    height: 5vh;
+}
+
+.navbar-tab {
+    margin: auto;
+    font-size: 20px;
+    width: 20vw;
+    font-family: 'Aftika Light';
+}
+
+
+#bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    height: 10vh;
+    background-color: rgb(243,214,180)
+}
+
+.bottom-tab {
+    align-self: flex-end;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    font-family: 'Aftika Light';
+    color: grey;
+}

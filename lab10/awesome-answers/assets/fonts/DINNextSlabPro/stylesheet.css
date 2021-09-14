@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'DIN Next Slab Pro';
+    src: url('DINNextSlabPro-Regular.eot');
+    src: local('DIN Next Slab Pro Regular'), local('DINNextSlabPro-Regular'),
+        url('DINNextSlabPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('DINNextSlabPro-Regular.woff') format('woff'),
+        url('DINNextSlabPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DIN Next Slab Pro';
+    src: url('DINNextSlabPro-Medium.eot');
+    src: local('DIN Next Slab Pro Medium'), local('DINNextSlabPro-Medium'),
+        url('DINNextSlabPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('DINNextSlabPro-Medium.woff') format('woff'),
+        url('DINNextSlabPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DIN Next Slab Pro';
+    src: url('DINNextSlabPro-Italic.eot');
+    src: local('DIN Next Slab Pro Italic'), local('DINNextSlabPro-Italic'),
+        url('DINNextSlabPro-Italic.eot?#iefix') format('embedded-opentype'),
+        url('DINNextSlabPro-Italic.woff') format('woff'),
+        url('DINNextSlabPro-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'DIN Next Slab Pro';
+    src: url('DINNextSlabPro-BoldItalic.eot');
+    src: local('DIN Next Slab Pro Bold Italic'), local('DINNextSlabPro-BoldItalic'),
+        url('DINNextSlabPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('DINNextSlabPro-BoldItalic.woff') format('woff'),
+        url('DINNextSlabPro-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'DIN Next Slab Pro';
+    src: url('DINNextSlabPro-UltLightIt.eot');
+    src: local('DIN Next Slab Pro UltraLight It'), local('DINNextSlabPro-UltLightIt'),
+        url('DINNextSlabPro-UltLightIt.eot?#iefix') format('embedded-opentype'),
+        url('DINNextSlabPro-UltLightIt.woff') format('woff'),
+        url('DINNextSlabPro-UltLightIt.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'DIN Next Slab Pro';
+    src: url('DINNextSlabPro-Heavy.eot');
+    src: local('DIN Next Slab Pro Heavy'), local('DINNextSlabPro-Heavy'),
+        url('DINNextSlabPro-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('DINNextSlabPro-Heavy.woff') format('woff'),
+        url('DINNextSlabPro-Heavy.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DIN Next Slab Pro';
+    src: url('DINNextSlabPro-HeavyItalic.eot');
+    src: local('DIN Next Slab Pro Heavy Italic'), local('DINNextSlabPro-HeavyItalic'),
+        url('DINNextSlabPro-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+        url('DINNextSlabPro-HeavyItalic.woff') format('woff'),
+        url('DINNextSlabPro-HeavyItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'DIN Next Slab Pro';
+    src: url('DINNextSlabPro-MediumIt.eot');
+    src: local('DIN Next Slab Pro Medium Italic'), local('DINNextSlabPro-MediumIt'),
+        url('DINNextSlabPro-MediumIt.eot?#iefix') format('embedded-opentype'),
+        url('DINNextSlabPro-MediumIt.woff') format('woff'),
+        url('DINNextSlabPro-MediumIt.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'DIN Next Slab Pro';
+    src: url('DINNextSlabPro-Black.eot');
+    src: local('DIN Next Slab Pro Black'), local('DINNextSlabPro-Black'),
+        url('DINNextSlabPro-Black.eot?#iefix') format('embedded-opentype'),
+        url('DINNextSlabPro-Black.woff') format('woff'),
+        url('DINNextSlabPro-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DIN Next Slab Pro';
+    src: url('DINNextSlabPro-LightItalic.eot');
+    src: local('DIN Next Slab Pro Light Italic'), local('DINNextSlabPro-LightItalic'),
+        url('DINNextSlabPro-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('DINNextSlabPro-LightItalic.woff') format('woff'),
+        url('DINNextSlabPro-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'DIN Next Slab Pro';
+    src: url('DINNextSlabPro-UltraLight.eot');
+    src: local('DIN Next Slab Pro UltraLight'), local('DINNextSlabPro-UltraLight'),
+        url('DINNextSlabPro-UltraLight.eot?#iefix') format('embedded-opentype'),
+        url('DINNextSlabPro-UltraLight.woff') format('woff'),
+        url('DINNextSlabPro-UltraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DIN Next Slab Pro';
+    src: url('DINNextSlabPro-BlackItalic.eot');
+    src: local('DIN Next Slab Pro Black Italic'), local('DINNextSlabPro-BlackItalic'),
+        url('DINNextSlabPro-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('DINNextSlabPro-BlackItalic.woff') format('woff'),
+        url('DINNextSlabPro-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'DIN Next Slab Pro';
+    src: url('DINNextSlabPro-Bold.eot');
+    src: local('DIN Next Slab Pro Bold'), local('DINNextSlabPro-Bold'),
+        url('DINNextSlabPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('DINNextSlabPro-Bold.woff') format('woff'),
+        url('DINNextSlabPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DIN Next Slab Pro';
+    src: url('DINNextSlabPro-Light.eot');
+    src: local('DIN Next Slab Pro Light'), local('DINNextSlabPro-Light'),
+        url('DINNextSlabPro-Light.eot?#iefix') format('embedded-opentype'),
+        url('DINNextSlabPro-Light.woff') format('woff'),
+        url('DINNextSlabPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+

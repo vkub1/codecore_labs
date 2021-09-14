@@ -1,0 +1,181 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Serif);
+
+#name {
+    display: grid;
+    grid-area: "a";
+    grid-template-columns: 20% 50% 20%;
+    gap: 5%;
+    grid-template-areas: 
+        "a b c"
+    ;
+}
+
+#first-line {
+    grid-area: "a";
+    left: 20%;
+}
+
+#second-line {
+    grid-area: "c";
+    right: 20%;
+}
+
+#full-name {
+    grid-area: "b";
+    text-align: center;
+}
+
+.line {
+    top: 50%;
+    
+    position: relative;
+}
+
+#contact-list {
+    padding-inline-start: 10px;
+    margin-top: 40px;
+    
+}
+
+#address {
+    list-style-image: url("../images/home.svg");
+}
+
+#github-contact {
+    list-style-image: url("../images/github.svg");
+}
+
+#phone {
+    list-style-image: url("../images/smartphone.svg");
+}
+
+#linkedin-contact {
+    list-style-image: url("../images/linkedin.svg") ;
+}
+
+
+.name-line {
+    border-width: 2px;
+    border-color: black;
+}
+
+header {
+    border-bottom: 2px solid black;
+}
+
+#second-block {
+    display: grid;
+    grid-area: "b";
+    grid-template-columns: 80% 20%;
+    grid-template-areas: 
+        "a b"
+    ;
+    border-bottom: 2px solid black;
+}
+
+#skills {
+    grid-area: "a";
+    margin: 2%;
+    border-right: 2px solid black;
+    
+}
+
+#contact {
+    grid-area: "b";
+    text-align: left;
+}
+
+#contact-list {
+    list-style: none;
+}
+
+.contact-list-item {
+    margin: 15px;
+    font-size: 18px;
+}
+
+#skills-block {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 5%;
+    grid-template-areas: 
+        "a b c"
+    ;
+    font-size: 18px;
+    overflow-wrap: anywhere;
+
+}
+
+
+#skills-block-one {
+    grid-area: "a";
+}
+
+#skills-block-two {
+    grid-area: "b";
+}
+
+#skills-block-three {
+    grid-area: "c";
+}
+
+
+
+
+.outer {
+    border: 2px solid black;
+}
+
+
+#outer-border {
+    padding: 5px;
+    margin: 20px;
+}
+
+#inner-border {
+    padding: 20px;
+}
+
+#education-block {
+    margin: 10px;
+    border-right: 2px solid black;
+}
+
+#third-block {
+    grid-area: "c";
+    display: grid;
+    grid-template-columns: 40% 40%;
+    gap: 5%;
+    grid-template-areas: 
+        "a b"
+    ;
+}
+
+#education-block {
+    grid-area: "a";
+}
+
+#projects-block {
+    grid-area: "b";
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "PT Serif", sans-serif;
+    overflow-wrap: anywhere;
+}
+
+#first-name{
+    font-size: 4em;
+}
+
+#skills-heading {
+    font-size: 2em;
+}
+
+#resume-body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+

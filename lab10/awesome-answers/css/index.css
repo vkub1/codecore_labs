@@ -1,0 +1,73 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+
+@font-face {
+    font-family: 'DIN';
+    src: url("../assets/fonts/DINNextSlabPro/DINNextSlabPro-Black.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'Aftika Light';
+    src: url('../assets/fonts/aftika_light.ttf') format('truetype');
+}
+
+
+#large-blocks {
+    display: flex;
+    height: 80vh;
+    background-color: rgb(243,214,180)
+}
+
+.large-block {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    padding: 1%;
+}
+
+#answer-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#block-one {
+    font-size: 7em;
+    font-family: 'DIN';
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 50vw;
+}
+
+#block-two {
+    padding: 0;
+    width: 50vw;
+    height: fit-content;
+    color: #F8BF61;
+    font-size: 3em;
+    font-family: 'DIN';
+}
+
+#question-info {
+    margin-top: 20px;
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    height: 5%;
+}
+
+.question-info-text {
+    padding: 0.5%;
+}
+
+#asked-by {
+    border-right: solid white;
+}
+
+#last-edited {
+    border-right: solid white;
+}
+
+
+
+

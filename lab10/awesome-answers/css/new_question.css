@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'DIN';
+    src: url("../assets/fonts/DINNextSlabPro/DINNextSlabPro-Black.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'Aftika Light';
+    src: url('../assets/fonts/aftika_light.ttf') format('truetype');
+}
+
+#new-questions {
+    height: 80vh;
+    background-color: rgb(243,214,180)
+}
+
+#form-div {
+    margin-left: 2vw;
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+}
+
+#new-question-label {
+    font-family: "DIN";
+    font-size: 3em;
+}
+
+#title-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.label-text {
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: "Aftika Light";
+    margin-left: 5px;
+}
+
+#body-input-div {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#title-input {
+    width: 20vw;
+    height: 5vh;
+}
+
+#body-input {
+    width: 20vw; 
+    height: 10vh;
+}
+
+#create-question {
+    margin-top: 3vh;
+    background-color: black;
+    color: white;
+    font-family: "Aftika Light";
+    font-size: 1.5em;
+    width: 15vw;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-weight: bold;
+}
+
+
+
