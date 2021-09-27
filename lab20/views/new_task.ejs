@@ -1,0 +1,21 @@
+<%- include('./partials/header.ejs') %>
+<div class="container col-md-6 heading-center"><h1>Add a new To Do Item</h1></div>
+<form action='/new_task' method="POST">
+<div class="container col-md-6 input-group name-form">
+    <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">Title</span>
+    </div>
+    <input type="text" class="form-control" 
+    aria-label="Username" 
+    aria-describedby="basic-addon1" name="title">
+    <div class="input-group mb-3 name-form">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Body</span>
+        </div>
+        <textarea type="text" class="form-control" 
+        aria-label="With textarea" 
+        aria-describedby="basic-addon1" name="body"></textarea>
+    </div>
+    <input type="submit" class="btn btn-primary">
+</form>
+<%- include('./partials/footer.ejs') %>

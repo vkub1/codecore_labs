@@ -1,0 +1,11 @@
+<h1>Edit Post</h1>
+
+<div class="col-md-6">
+    <div><form action="/posts/<%= post.id%>" method="POST">
+        <div><input type="text" name="title" value="<%= post.title%>"></div>
+        <div><textarea name="body"><%= post.body%></textarea></div>
+        <div><input type=text name="imageUrl" value="<%= post.imageUrl%>"></div>
+        <input type='hidden' name = "_method" value="PATCH">
+        <input type="submit" value="Edit">
+    </form> 
+</div>

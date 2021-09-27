@@ -1,0 +1,21 @@
+.name-form {
+    margin-top: 3vh;
+}
+
+.heading-center {
+    text-align: center;
+}
+
+.card_container {
+    margin: 5vh 5vw;
+}
+
+.cards_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card_cont {
+    margin: 2vh 2vw;
+}

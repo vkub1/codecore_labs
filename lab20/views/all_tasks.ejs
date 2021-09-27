@@ -1,0 +1,15 @@
+<%- include('./partials/header.ejs') %>
+
+<h1>All tasks: </h1>
+<div class="card-group">
+    <% for (const task of user.tasks) { %>
+        <div class="card card_container" style="width: 18rem;">
+            <div class="card-body">
+            <h5 class="card-title"><%= task.title %></h5>
+            <p class="card-text"><%= task.body %></p>
+            </div>
+        </div>
+        <p></p>
+    <% } %>
+</div>
+<%- include('./partials/footer.ejs') %>

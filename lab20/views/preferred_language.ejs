@@ -1,0 +1,26 @@
+<%- include('./partials/header.ejs') %>
+<form action="/preferred_language" method="POST">
+    <div class="container col-md-6 input-group name-form">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Name</span>
+        </div>
+        <input type="text" class="form-control" 
+        aria-label="Username" 
+        aria-describedby="basic-addon1" name="name" value="<%= name %>">
+        <div class="input-group mb-3 name-form">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01">Preffered Language</label>
+            </div>
+            <select name="language"class="custom-select" id="inputGroupSelect01">
+                <% for (let language in preferred_languages) { %>
+                    <option value="<%= language %>" <% if (language === selected) { %> selected <% } %> >
+                        <%= preferred_languages[language] %>
+                    </option>
+                <% } %>
+            </select>
+        </div>
+        <input type="submit" class="btn btn-primary">
+    </div>
+    
+</form>
+<%- include('./partials/footer.ejs') %>

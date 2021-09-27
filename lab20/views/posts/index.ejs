@@ -1,0 +1,17 @@
+<%- include('../partials/header.ejs') %>
+<h1>Posts</h1>
+<a href='/new_post'><button class="btn btn-primary">New Post</button></a>
+<div class="cards_container">
+<% for (const post of posts) { %>
+    <div class="card col-md-3 card_cont">
+        <img class="card-img-top" src="<%= post.imageUrl%>" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title"><%= post.title%></h5>
+          <p class="card-text"><%= post.body %></p>
+        </div>
+        <a href="/posts/<%= post.id%>" class="btn btn-primary">View Post</a>
+      </div>
+      
+<% } %>
+</div>
+<%- include('../partials/footer.ejs') %>
