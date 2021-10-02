@@ -1,0 +1,12 @@
+<%- include("./partials/header.ejs") %>
+    <h1><%= winner %></h1>
+    <form action='/random_person'>
+        <div>
+            <label for="names">Please enter a comma separated list of names</label>
+            <br>
+            <input type="text" id="names" name="names">
+            <br>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+<%- include("./partials/footer.ejs") %>

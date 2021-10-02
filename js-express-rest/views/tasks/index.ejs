@@ -1,0 +1,17 @@
+<%- include('../partials/header.ejs') %>
+<h1>All Tasks:</h1>
+<a href='/tasks/new'><button class="btn btn-primary">New Tasks</button></a>
+<div class="cards_container">
+<% for (const task of tasks) { %>
+    <div class="card col-md-3 card_cont">
+        <div class="card-body text-align-center">
+            <input class="form-check-input" type="checkbox" value="" <% if (task.completed) { %> checked <%} %> disabled>
+            <label class="form-check-label" for="flexCheckCheckedDisabled">
+                <%= task.body %>
+            </label>
+        </div>
+        <a href="/tasks/<%= task.id%>" class="btn btn-primary view_button">View Task</a>
+      </div>
+      
+<% } %>
+<%- include('../partials/footer.ejs') %>

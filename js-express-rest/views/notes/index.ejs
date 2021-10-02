@@ -1,0 +1,14 @@
+<%- include('../partials/header.ejs') %>
+<h1>All Notes:</h1>
+<a href='/notes/new'><button class="btn btn-primary">New Note</button></a>
+<div class="cards_container">
+<% for (const note of notes) { %>
+    <div class="card col-md-3 card_cont">
+        <div class="card-body">
+          <p class="card-text text-align-center"><%= note.content %></p>
+        </div>
+        <a href="/notes/<%= note.id%>" class="btn btn-primary view_button">View Post</a>
+      </div>
+      
+<% } %>
+<%- include('../partials/footer.ejs') %>

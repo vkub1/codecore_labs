@@ -1,0 +1,9 @@
+<h1>Edit Note</h1>
+
+<div class="col-md-6">
+    <div><form action="/notes/<%= note.id%>" method="POST">
+        <div><textarea name="content"><%= note.content%></textarea></div>
+        <input type='hidden' name = "_method" value="PATCH">
+        <input type="submit" value="Edit">
+    </form> 
+</div>

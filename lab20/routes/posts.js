@@ -4,7 +4,6 @@ const router = express.Router();
 
 router.get('/posts', (request , response) => {
     knex.select('*').from('posts').orderBy('createdAt', 'desc').then(data => {
-        console.log(data);
         response.render('./posts/index', {
             posts: data
         })
@@ -32,6 +31,7 @@ router.get('/posts/:id', (req,res) => {
     knex('posts').where("id", id)
     .first()
     .then(data => {
+        console.log(data);
         res.render('./posts/show', {
             post: data
         })

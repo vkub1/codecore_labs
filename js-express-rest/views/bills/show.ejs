@@ -1,0 +1,28 @@
+<%- include('../partials/header.ejs') %>
+    <div class="centered_container">
+    <div class="card col-md-6 card_cont">
+        <div class="card-body">
+        <p class="card-text text-align-center">
+            Bill Total: <%= bill.billTotal%>$
+        </p>
+        <hr>
+        <p class="card-text text-align-center">
+            Tax Percentage: <%= bill.taxPercent %>%
+        </p>
+        <hr>
+        <p class="card-text text-align-center">
+            Tip Percentage: <%= bill.tipPercentage %>%
+        </p>
+        <hr>
+        <p class="card-text text-align-center">
+            Split <%= bill.numberOfPeople %> ways
+        </p>
+        <hr>
+        <p class="card-text text-align-center">
+            <%= ( bill.billTotal + (bill.billTotal * bill.taxPercent / 100) 
+            + (bill.billTotal * bill.tipPercentage / 100)) / bill.numberOfPeople %>$ per person
+        </p>
+        </div>
+    </div>
+</div>
+<%- include('../partials/footer.ejs') %>

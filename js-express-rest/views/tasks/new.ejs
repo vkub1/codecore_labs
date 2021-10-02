@@ -1,0 +1,26 @@
+<%- include('../partials/header.ejs') %>
+<div class="centered_container">
+    <h1>New Task:</h1>
+    <div class="col-md-6">
+        <form action='/tasks' method="POST">
+            <div class="centered_container">
+                <div>
+                <input class="form-check-input centered_container" type="checkbox" value='true' id="flexCheckDefault" name="completed">
+                </div>
+                <div>
+                <label class="form-check-label" for="flexCheckDefault">
+                    Task Completed
+                </label>
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Task Content</span>
+                </div>
+                <textarea class="form-control" aria-label="With textarea" name="body"></textarea>
+            </div>
+            <div class="centered_container"><input type="submit" class="btn btn-primary"></div>
+        </form>
+    </div>
+</div>
+<%- include('../partials/footer.ejs') %>

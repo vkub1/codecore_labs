@@ -1,0 +1,28 @@
+<%- include('../partials/header.ejs') %>
+<h1>All Bills:</h1>
+<a href='/bills/new' class="btn btn-primary">New Bill Split</a>
+<div class="cards_container">
+<%let dollarUSLocale = Intl.NumberFormat('en-US');%>
+<% for (const bill of bills) { %>
+    <div class="card col-md-3 card_cont">
+        <div class="card-body">
+          <p class="card-text text-align-center">
+            Bill Total: <%= dollarUSLocale.format(bill.billTotal)%>$
+          </p>
+          <hr>
+          <p class="card-text text-align-center">
+            Tax Percentage: <%= bill.taxPercent %>%
+          </p>
+          <hr>
+          <p class="card-text text-align-center">
+            Tip Percentage: <%= bill.tipPercentage %>%
+          </p>
+          <hr>
+          <p class="card-text text-align-center">
+            Split <%= bill.numberOfPeople %> ways
+          </p>
+        </div>
+        <a href="/bills/<%= bill.id%>" class="btn btn-primary view_button">View Bill Split</a>
+      </div>
+<% } %>
+<%- include('../partials/footer.ejs') %>

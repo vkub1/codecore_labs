@@ -1,0 +1,54 @@
+<%- include('../partials/header.ejs') %>
+    <div class="centered_container">
+        <h1>New Bill Split</h1>
+        <div class="col-md-8">
+            <form action='/bills' method="POST">
+                <div class="text-align-center">
+                    <label for='billTotal'>
+                        <b>Amount</b>
+                    </label>
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">$</span>
+                    </div>
+                    <input type="text" class="form-control" name='billTotal'
+                    aria-label="Amount (to the nearest dollar)">
+                </div>
+                <div class="text-align-center">
+                    <label for='taxPercent'>
+                        <b>Tax</b>
+                    </label>
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">%</span>
+                    </div>
+                    <input type="text" class="form-control" name='taxPercent'
+                    aria-label="Amount (to the nearest dollar)">
+                </div>
+                <div class="text-align-center">
+                    <label for='tipPercentage'>
+                        <b>Tip</b>
+                    </label>
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">%</span>
+                    </div>
+                    <input type="text" class="form-control" name='tipPercentage'
+                    aria-label="Amount (to the nearest dollar)">
+                </div>
+                <div class="text-align-center">
+                    <label for='numberOfPeople'>
+                        <b>Number of People</b>
+                    </label>
+                </div>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" name='numberOfPeople'>
+                </div>
+                <div class="centered_container"><input type="submit" class="btn btn-primary"></div>
+            </form>
+        </div>
+    </div>
+<%- include('../partials/footer.ejs') %>

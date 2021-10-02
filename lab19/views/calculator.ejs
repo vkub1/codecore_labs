@@ -1,0 +1,85 @@
+<%- include('./partials/header.ejs') %>
+<style>
+    .btn {
+        background-color: #de4814;
+        display: inline;
+        height: 5vh;
+        margin: 2px;
+        padding: 2px;
+        width: fit-content;
+        color: white
+    }
+
+    body {
+        text-align: center;
+    }
+</style>
+<h1>Calculator</h1>
+<form action='/'>
+    <div>
+        <input id='number1' name='number1' <% if (addition_result) {%>
+            value="<%= number1 %>"
+        <%} %>>
+        <div class='btn'> + </div>
+        <input id='number2' name='number2' <% if (addition_result) {%>
+            value="<%= number2 %>"
+        <%} %>
+        > 
+        <input type="submit" value="=" name="method_add">
+        <% if (addition_result) { %>
+            <div id="addition_result" class='btn'> <%= addition_result%></div>
+        <% } %>
+    </div>
+</form>
+<br>
+<form action='/'>
+    <div>
+        <input id='number1' name='number1' <% if (subtraction_result) {%>
+            value="<%= number1 %>"
+        <%} %>>
+        <div class='btn'> - </div>
+        <input id='number2' name='number2' <% if (subtraction_result) {%>
+            value="<%= number2 %>"
+        <%} %>
+        > 
+        <input type="submit" value="=" name="method_sub">
+        <% if (subtraction_result) { %>
+            <div id="subtraction_result" class='btn'> <%= subtraction_result%></div>
+        <% } %>
+    </div>
+</form>
+<br>
+<form action='/'>
+    <div>
+        <input id='number1' name='number1' <% if (multiplication_result) {%>
+            value="<%= number1 %>"
+        <%} %>>
+        <div class='btn'> * </div>
+        <input id='number2' name='number2' <% if (multiplication_result) {%>
+            value="<%= number2 %>"
+        <%} %>
+        > 
+        <input type="submit" value="=" name="method_mult">
+        <% if (multiplication_result) { %>
+            <div id="multiplication_result" class='btn'> <%= multiplication_result%></div>
+        <% } %>
+    </div>
+</form>
+<br>
+<form action='/'>
+    <div>
+        <input id='number1' name='number1' <% if (division_result) {%>
+            value="<%= number1 %>"
+        <%} %>>
+        <div class='btn'> / </div>
+        <input id='number2' name='number2' <% if (division_result) {%>
+            value="<%= number2 %>"
+        <%} %>
+        > 
+        <input type="submit" value="=" name="method_div">
+        <% if (division_result) { %>
+            <div id="division_result" class='btn'> <%= division_result%></div>
+        <% } %>
+    </div>
+</form>
+<%- include('./partials/footer.ejs') %>

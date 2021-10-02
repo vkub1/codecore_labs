@@ -1,0 +1,15 @@
+<%- include("./partials/header.ejs") %>
+    <form action='/car_status'>
+    <div>
+        <h1> <%= car_status%></h1>
+        <label for="car_year">What year was your Car made?</label>
+        <br>
+        <select name="car_year" id="car_year">
+            <% for (let i = 2025; i >= 1950; i--) {%>
+                <option value="<%= i %>"> <%= i %> </option>
+            <% } %>
+        </select>
+        <input type="submit" value="Submit">
+    </div>
+    </form>
+<%- include("./partials/footer.ejs") %>

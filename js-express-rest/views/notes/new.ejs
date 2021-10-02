@@ -1,0 +1,16 @@
+<%- include('../partials/header.ejs') %>
+    <div class="centered_container">
+        <h1>New Note</h1>
+        <div class="col-md-6">
+            <form action='/notes' method="POST">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Note Content</span>
+                    </div>
+                    <textarea class="form-control" aria-label="With textarea" name="content"></textarea>
+                </div>
+                <div class="centered_container"><input type="submit" class="btn btn-primary"></div>
+            </form>
+        </div>
+    </div>
+<%- include('../partials/footer.ejs') %>

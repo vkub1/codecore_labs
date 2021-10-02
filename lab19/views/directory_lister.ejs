@@ -1,0 +1,23 @@
+<%- include('./partials/header.ejs') %>
+
+<h1>Directory Lister</h1>
+
+<% 
+    files.forEach((file,index) => {
+        let name = file;
+        if (file.split('.').length !== 1) {
+            name = name + '/';
+        }
+        if (index !== files.length - 1) { %>
+            <div>
+                ├── <%= name%>
+            </div>
+         <% } else { %>
+            <div>
+                └── <%= name %>
+            </div>
+        <% } %> 
+   <% }); %> 
+
+<%- include('./partials/footer.ejs') %>
+

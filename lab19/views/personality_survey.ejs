@@ -1,0 +1,28 @@
+<%- include('./partials/header.ejs') %>
+<h1>The Three Question Personality Test</h1>
+<h1> <%= personality %> </h1> 
+<form action='/personality_survey'>
+    <div>
+        <h2>You work best</h2>
+        <input type="radio" id="with_deadline" value="With Deadlines" name="work_best">
+        <label for="with_deadline">With Deadlines</label><br>
+        <input type="radio" id="without_deadlines" value="Without Deadlines" name="work_best">
+        <label for="without_deadlines">Without Deadlines</label><br>
+    </div>
+    <div>
+        <h2>You consider yourself more</h2>
+        <input type="radio" id="rational" value="Rational" name="self_opinion">
+        <label for="rational">Rational</label><br>
+        <input type="radio" id="compassionate" value="Compassionate" name="self_opinion">
+        <label for="compassionate">Compassionate</label><br>
+    </div>
+    <div>
+        <h2>You are more interested in</h2>
+        <input type="radio" id="ideas" value="Ideas" name="interests">
+        <label for="ideas">Ideas</label><br>
+        <input type="radio" id="facts" value="Facts" name="interests">
+        <label for="facts">Facts</label><br>
+    </div>
+    <input type="submit" value="Submit">
+</form>
+<%- include('./partials/footer.ejs') %>
